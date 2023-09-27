@@ -73,8 +73,8 @@ function App() {
               <td>{product.nombre_producto}</td>
               <td >{product.precio_unitario}</td>
               <td>{product.stock}</td>
-              <td><button type='button' onClick={()=>borrarProducto(product._id)}>Eliminar</button></td>
-              <td><button type='button' onClick={()=>venderProducto(product._id)}>Comprar</button></td>
+              <td><button type='button' className="btn btn-primary" onClick={()=>borrarProducto(product._id)}>Eliminar</button></td>
+              <td><button type='button' className="btn btn-primary" onClick={()=>venderProducto(product._id)}>Comprar</button></td>
             </tr>
             ))}
             
